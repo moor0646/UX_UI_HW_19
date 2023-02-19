@@ -1,0 +1,354 @@
+#parent {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 800px;
+    width: 100%;
+    padding: 10;
+  }
+  
+  #child1 {
+    flex-direction: column;
+    background-color: white;
+    height: 800px;
+    width: 22%;
+  }
+  
+  #child2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    height: 800px;
+    width: 75%;
+    margin: 10px auto;
+  }
+  
+  
+  .card {
+    background-image: url(../images/profile-photo.png);
+    background-repeat: no-repeat;
+    background-size: 300px 270px;
+    height: 211px;
+    width: 250px;
+    padding: 20px;
+    margin: 10px auto;
+  }
+  
+  .card2 {
+      background-image: url(../images/logo3.png);
+      background-repeat: no-repeat;
+      background-size: 280px 80px;
+      height: 40px;
+      width: 250px;
+      padding: 20px;
+      margin: auto;
+    }
+  
+  .center {
+      background-color: white;
+      height: 130px;
+      width: 250px;
+      padding: 20px;
+  }
+  
+  .center2 {
+      display: flex;
+      background-color: white;
+      height: 10px;
+      width: 250px;
+      padding: 20px;
+      align-items: center;
+  }
+  
+  
+  .center3 {
+    display: flex;
+    background-color: #DD5C5C;
+    height: 40px;
+    width: 250px;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .head {
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: poppins;
+      font-weight: 100px;
+  }
+  
+  .subhead {
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: poppins;
+      font-weight: 100px;
+  }
+  
+  .subhead2 {
+      display: flex;
+      justify-content: center;
+      line-height: .5px;
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      font-family: poppins;
+      font-weight: 200px;
+      text-align: center;
+  
+  }
+  
+  .box {
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    margin: 10px auto;
+  }
+  
+  .quote {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      color: black;
+      font-family: poppins;
+      padding: 40px;
+      line-height: 1.8;
+      font-weight: 100;
+  }
+  
+  
+  .card3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    height: 130px;
+    width: 96%;
+    margin: 10px auto;
+    padding: 25px;
+  }
+  
+  .column {
+    width: 45%;
+    height: 250px;
+    background-color: grey;
+  }
+  
+  .container-with-grid {
+    display: grid;
+    height: 550px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "footerBar footerBar"
+      "leftSidebar rightContent"
+      "topRow headerBar"
+      ;
+  }
+  .topRow {
+    grid-area: topRow;
+    background-image: url(../images/BAB.png);
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    width: 97%;
+    height: 250px;
+  }
+  
+  .topRow:hover {
+    background-image: url(../images/BAB-hover.png);
+    background-repeat: no-repeat;
+  }
+  
+  .headerBar {
+    grid-area: headerBar;
+    background-image: url(../images/DonateKind.png);
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+  }
+  
+  .headerBar:hover {
+    background-image: url(../images/DonateKind-hover.png);
+    background-repeat: no-repeat;
+  }
+  
+  .leftSidebar {
+    grid-area: leftSidebar;
+    background-image: url(../images/WAS.png);
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    width: 97%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .leftSidebar:hover {
+    background-image: url(../images/WAS-hover.png);
+    background-repeat: no-repeat;
+  }
+  
+  .rightContent {
+    grid-area: rightContent;
+    background-image: url(../images/HOC.png);
+    background-repeat: no-repeat;
+    background-size: 100% 260px;
+    margin-bottom: 15px;
+  
+  }
+  
+  .rightContent:hover {
+    background-image: url(../images/HOC-1.png);
+    background-repeat: no-repeat;
+  }
+  
+  .footerBar {
+    grid-area: footerBar;
+    background-color: #F5F5F5;
+    height: 180px;
+    margin-bottom: 15px;
+  }
+
+  .container-with-grid2 {
+    display: grid;
+    height: 550px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "top rightBar rightBar"
+      "leftBar middleBar rightSide"
+      "resume resume resume"
+      ;
+  }
+
+  .top{
+    grid-area: top;
+    background-image: url(../images/photo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    height: 300px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .rightBar {
+    grid-area: rightBar;
+    background-color: #F2F2F2;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .leftBar {
+    grid-area: leftBar;
+    background-color: white;
+    height: 100px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+   
+  .middleBar {
+    grid-area: middleBar;
+    background-color: white;
+    height: 140px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .rightSide {
+    grid-area: rightSide;
+    background-color: white;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .resume {
+    grid-area: resume;
+    background-color: #F4F9FC;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    font-family: poppins;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+.subcopy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: poppins;
+    padding-left: 25px;
+    padding-right: 30px;
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.copy2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    font-family: poppins;
+    padding-left: 10px;
+    padding-right: 15px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.copy3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+    font-family: poppins;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+.copy4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
